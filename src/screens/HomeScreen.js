@@ -28,6 +28,8 @@ function HomeScreen(props) {
     setSortOrder(e.target.value);
     dispatch(listProducts(category, searchKeyword, sortOrder));
   };
+  console.log("Product log:");
+  console.log(products);
 
   return (
     <>
