@@ -61,7 +61,7 @@ function HomeScreen(props) {
       ) : (
         <ul className="products">
           {
-            (products === undefined || products.length === 0) ? <div> no items found </div> :          
+            (!Array.isArray(products)) ? <div> products is not array </div> :          
               products.map((product) => (
                 <li key={product._id}>
                   <div className="product">
